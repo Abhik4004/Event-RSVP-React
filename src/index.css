@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Playwrite+BE+VLG:wght@100..400&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.title {
+  font-family: "Playwrite BE VLG", sans-serif;
+}
+
+.rsvp {
+  margin-bottom: 50px;
+  border: 5px black dotted;
+  background-color: #729762;
+  border-radius: 50px;
+  width: 35rem;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+}
+
+.rsvp button {
+  background-color: #def9c4;
+  margin: 25px;
+  border-radius: 60px;
+  font-weight: bold;
+}
+
+.date {
+  color: #f3ff90;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.desc {
+  color: #fff6e9;
+}
+
+.event-adder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  border: 5px black dotted;
+  padding: 15px;
+  border-radius: 5%;
+}
+
+.Add-Event {
+  margin: 15px;
+  margin-bottom: 25px;
+  width: 8rem;
+  border-radius: 5rem;
+  background-color: #006769;
+  color: wheat;
 }
