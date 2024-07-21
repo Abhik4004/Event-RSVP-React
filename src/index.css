@@ -5,7 +5,9 @@
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  /* background-image: url("/public/bg.jpg"); */
+  background-image: url("/public/background.jpg");
+  margin: 0;
+  padding: 0;
 }
 
 .title {
@@ -70,6 +72,11 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
+  border: 5px black solid;
+}
+
+.event-adder {
+  background-color: #ecffe6;
 }
 
 .event-adder label {
