@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Collaborative Task Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Collaborative Task Manager is a web application designed to help teams manage tasks and collaborate effectively. Users can create projects, add tasks, assign team members, and track task progress with real-time updates.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Create Projects**: Easily create and manage projects.
+- **Add Tasks**: Add tasks with details such as description, due date, and assignee.
+- **Task Status Tracking**: Track task progress with statuses such as Pending, In Progress, and Completed.
+- **User Management**: Assign tasks to team members and view their RSVP status.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**: React.js
+<!-- - **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Real-Time Communication**: Socket.IO -->
+- **Styling**: CSS
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js and npm
+- MongoDB
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the Repository**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/yourusername/task-manager.git
+   cd task-manager
+   ```
 
-### `npm run eject`
+2. **Install Dependencies**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Setup the Backend**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   - Navigate to the `server` directory and install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+     ```bash
+     cd server
+     npm install
+     ```
 
-## Learn More
+   - Start the server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+     ```bash
+     node server.js
+     ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Setup the Frontend**
 
-### Code Splitting
+   - Navigate to the `client` directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+     ```bash
+     cd ../client
+     npm start
+     ```
 
-### Analyzing the Bundle Size
+### Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Update the MongoDB connection string in `server/config.js`.
+- Set up any necessary environment variables in `.env`.
 
-### Making a Progressive Web App
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. **Create a New Project**
 
-### Advanced Configuration
+   - Navigate to the Projects section and click "Create Project".
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. **Add Tasks**
 
-### Deployment
+   - Select a project and click "Add Task" to create a new task with details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3. **Assign Tasks**
 
-### `npm run build` fails to minify
+   - Assign tasks to team members and set the status.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. **Track Progress**
+   - Use the task list to view and update task statuses in real-time.
+
+## Future Work :
+
+Backe-end will be added using nodejs as soon as front-end is done.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes. Make sure to follow the code style and add tests for new features.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
